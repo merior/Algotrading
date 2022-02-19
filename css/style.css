@@ -345,6 +345,37 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.button__primary {
+  background-color: #0842b7;
+  color: white;
+  border: none;
+  padding: 15px 45px;
+}
+
+.button__secondary {
+  background-color: transparent;
+  color: #0842b7;
+  border: 1px solid #0842b7;
+  padding: 14px 39px;
+}
+
+.txt {
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.txt__span-hero {
+  color: #06bee1;
+}
+
 .container {
   width: 100%;
   max-width: 1140px;
@@ -431,11 +462,12 @@ a {
 
 .hero {
   padding-top: 178px;
-  padding-bottom: 755px;
-  background: url("../img/webp/bg.webp") center no-repeat;
+  padding-bottom: 605px;
+  background: url("../img/webp/bg.webp") -185px -57px no-repeat;
 }
 
 .hero__title {
+  margin: 0;
   margin-bottom: 8px;
   font-family: 'Roboto';
   font-weight: normal;
@@ -447,20 +479,40 @@ a {
 }
 
 .hero__title-mini {
+  margin: 0;
   font-family: 'Roboto';
-  text-transform: uppercase;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: black;
 }
 
-.hero____buttonsandtxt {
+.hero__text {
+  max-width: 349px;
+  width: 100%;
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 65px;
+  font-size: 16px;
+}
+
+.hero__buttonsandtxt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.hero__buttonsandtxt__button:first-child {
+  margin-bottom: 12px;
+}
+
+.hero__buttonsandtxt__txt {
+  margin-left: 53px;
+  max-width: 350px;
+  width: 100%;
+  font-size: 25px;
 }
 
 .hero__buttons {
