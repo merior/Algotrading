@@ -346,6 +346,7 @@ a {
 }
 
 .title {
+  margin: 0;
   color: #0f1c2e;
   font-family: 'Roboto';
   font-weight: normal;
@@ -374,6 +375,7 @@ a {
 }
 
 .txt {
+  margin: 0;
   color: #0f1c2e;
   font-family: 'Roboto';
   font-weight: normal;
@@ -416,14 +418,18 @@ a {
           justify-content: space-between;
 }
 
+.row-mini {
+  padding-top: 66px;
+  padding-bottom: 140px;
+  border-bottom: 1px solid #eaf1f7;
+}
+
 .col-25 {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  width: 25%;
 }
 
 .col-50 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  width: 50%;
 }
 
 *, *:before, *:after {
@@ -897,5 +903,119 @@ img {
   width: 100%;
   font-size: 16px;
   text-align: center;
+}
+
+.training {
+  padding-top: 117px;
+}
+
+.training__title {
+  padding-bottom: 64px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.training__card {
+  max-width: 555px;
+  width: 100%;
+  padding-left: 47px;
+  padding-top: 182px;
+  padding-bottom: 43px;
+}
+
+.training__card-graph {
+  background: url("../img/webp/graph_bg.webp") center no-repeat;
+}
+
+.training__card-men {
+  background: url("../img/webp/men_bg.webp") center no-repeat;
+}
+
+.training__card-title {
+  margin-bottom: 31px;
+  max-width: 184px;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+}
+
+.training__card-title-mini {
+  margin-top: 47px;
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+
+.training__card-txt {
+  color: white;
+  max-width: 193px;
+  width: 100%;
+}
+
+.training__card-txt-last {
+  max-width: 273px;
+  width: 100%;
+}
+
+.training__card-txt-mini {
+  font-size: 16px;
+}
+
+.training__card-txt-mini-star {
+  max-width: 199px;
+  width: 100%;
+}
+
+.training__card-txt-mini-check {
+  max-width: 249px;
+  width: 100%;
+}
+
+.training__card-txt-mini-cloud {
+  max-width: 251px;
+  width: 100%;
+}
+
+.training__card-txt-mini-headphones {
+  max-width: 259px;
+  width: 100%;
+}
+
+.process {
+  background: url("../img/webp/process_bg.webp") center bottom repeat-x;
+  padding-top: 112px;
+  padding-bottom: 116px;
+}
+
+.process__title {
+  font-size: 36px;
+  margin-bottom: 111px;
+  max-width: 463px;
+  width: 100%;
+}
+
+.process-card__title {
+  margin-top: 43px;
+  margin-bottom: 31px;
+  font-size: 20px;
+}
+
+.process-card__txt {
+  font-size: 16px;
+  max-width: 160px;
+  width: 100%;
+}
+
+.process-card__strong {
+  font-size: 36px;
+}
+
+.week {
+  max-width: 132px;
+  width: 100%;
+}
+
+.month {
+  max-width: 166px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
