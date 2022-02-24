@@ -1,37 +1,79 @@
 .make
+    background: url('../img/webp/wave.webp')no-repeat bottom center
     margin-top: 111px
+    padding-bottom: 120px
+    .col__title
+        margin-right: 135px
     &__title
-        margin: 0
-        margin-bottom: 29px
-        text-align: center
-        font-size: 36px
-        line-height: 42px
-    &__txt
         margin: auto
-        margin-bottom: 64px
         text-align: center
-        max-width: 354px
+        max-width: 500px
         width: 100%
-        font-size: 16px
-    &__col
-        &-title
-            max-width: 255px
-            width: 100%
-            margin: 0
-            font-size: 20px
-            line-height: 1.2
-            font-weight: 
-        &-txt
-            max-width: 176px
-            width: 100%
-    &__number
-        &__label
-            max-width: 197px
+        color: #0F1C2E
+        margin-bottom: 64px
+        &__heading
+            font-size: 33px
+            line-height: 1.30
+            margin-bottom: 24px
+        &__discription
+            line-height: 1.30
+            margin: auto
+            max-width: 370px
             width: 100%
             font-size: 16px
-        &__input
-            max-width: 55px
+    &__calc
+        &__container
+            display: flex 
+            &__titles
+                
+                max-width: 255px
+                width: 100%  
+                font-size: 19px
+                line-height: 1.30
+            &__heading
+                font-weight: normal
+                margin: 0
+        &-data
+            max-width: 328px
             width: 100%
-            max-height: 48px
-            height: 100%
+            display: flex
+            align-items: center
+            padding-bottom: 2.5rem
+            margin-bottom: 2.5rem
+            border-bottom: 1px solid rgba(234, 241, 247, 1)
+            &__text
+                font-size: 16px
+                font-weight: lighter
+                line-height: 1.30
 
+            &__smaller
+                padding-left: 62px
+                max-width: 337px
+                width: 100%
+            &:last-of-type
+                margin-bottom: 0
+            &__input
+                width: 98px
+                height: 48px
+                text-indent: 20px
+                border: 1px solid rgba(207, 222, 238, 1)
+                border-radius: 5px
+                margin-right: 2.3571rem
+    .no-border
+        border: none
+    &-button__container
+        display: flex
+        justify-content: center
+        margin-top: 32px
+        
+    &__button
+        padding: 18px 27px 15px
+        text-decoration: none
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 17px
+        border: none
+        border-radius: 5px
+        cursor: pointer
+        background-color: $darkerBlue
+        color: $light

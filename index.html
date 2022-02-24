@@ -72,40 +72,58 @@
         <!-- конец секции инфо -->
         <section class="section make">
             <div class="container">
-                <h2 class="title make__title">Создай своего <br>авторского торгового робота</h2>
-                <p class="txt make__txt">получайте прибыль даже с нулевыми знаниями в сфере алгоритмической торговли</p>
-                <div class="row">
-                    <div class="col-30 make__col">
-                        <h3 class="title make__col-title"><span class="span--bold">Сколько бы Вы заработали</span>, используя торгового робота</h3>
-                        <p class="txt make__col-txt">Просто введите данные и сравните результаты </p>
-                    </div>
-
-                    <div class="col-30 make__col">
-                        <div class="make__number">
-                            <input type="number" class="input make__number__input">
-                            <label class="label make__number__label txt">Количество инструментов, по которым Вы торгуете</label>
-                        </div>
-                        <div class="creation-data">
-                            <input type="number" class="input make__number__input">
-                            <label class="label make__number__label txt">Количество инструментов Вашего брокера</label>
-                        </div>
-
-                    </div>
-                    <div class="col-30 make__col">
-                        <div class="make__number">
-                            <input type="number" class="input make__number__input">
-                            <label class="label make__number__label txt">Количество инструментов, по которым Вы торгуете</label>
-                        </div>
-                        <div class="creation-data">
-                            <input type="number" class="input make__number__input">
-                            <label class="label make__number__label txt">Количество инструментов Вашего брокера</label>
-                        </div>
-                    </div>
-
+                <div class="make__title">
+                    <h2 class="make__title__heading">Создайте своего <br> авторского торгового робота</h2>
+                    <p class="make__title__discription">получайте прибыль даже с нулевыми знаниями в сфере алгоритмической торговли</p>
                 </div>
-                <input type="button" class="button button__primary" value="Просчитать прибыль на 2016 год">
-            </div>
-        </section>
+                
+
+                <div class="make__calc__container">
+                    <div class="col col__title">
+                        <div class="make__calc__container__titles">
+                            <h3 class="make__calc__container__heading"><strong>Сколько бы Вы
+                            заработали</strong>, используя
+                            торгового робота</h3>
+                            <p class="make__calc__container__discription">Просто введите данные
+                            и сравните результаты </p>
+                        </div>
+                       
+                    </div>
+                    <!-- /.col -->
+                    <div class="col col__calc">
+                        <div class="make__calc-data">
+                            <input type="number" class="make__calc-data__input">
+                            <label class="make__calc-data__text">Количество инструментов,<br> по которым Вы торгуете</label>
+                        </div>
+                        <!-- /.make__calc-data -->
+                        <div class="make__calc-data no-border">
+                            <input type="number" class="make__calc-data__input ">
+                            <label class="make__calc-data__text">Количество инструментов Вашего брокера</label>
+                        </div>
+                        <!-- /.make__calc-data -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col col__calc">
+                        <div class="make__calc-data make__calc-data__smaller">
+                            <input type="number" class="make__calc-data__input">
+                            <label class="make__calc-data__text">Средняя месячная прибыль (%)</label>
+                        </div>
+                        <!-- /.make__calc-data -->
+                        <div class="make__calc-data make__calc-data__smaller no-border">
+                            <input type="number" class="make__calc-data__input">
+                            <label class="make__calc-data__text">Сумма депозита ($)</label>
+                        </div>
+                        <!-- /.make__calc-data -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="make-button__container">
+                    <button class="button make__button">Просчитать прибыль на 2016 год</button>
+                </div>
+                <!-- /.make-button -->
+                </div>
+            </section>           
         <!-- потом -->
         <section class="section learn">
             <h2 class="title learn__title">Обучитесь алгоритмической торговле  и уже <span class="span">через 30 дней</span> создайте своего эффективного торгового робота!</h2>
@@ -209,12 +227,12 @@
                         <h3 class="title training__card-title-mini span--bold">Практическая часть</h3>
                         <p class="txt training__card-txt-mini training__card-txt-mini-check">Выполняйте домашние задания и проверяйте полученные знания с помощью различных интерактивных тестов</p>
                     </div>
-                    <div class="col-25 training__card-min-cloudi">
+                    <div class="col-25 training__card-min-cloud cloud">
                         <img src="img/webp/text-cloud.webp" alt="" class="img training__card-img">
                         <h3 class="title training__card-title-mini span--bold">Форум</h3>
                         <p class="txt training__card-txt-mini training__card-txt-mini-cloud">Обговаривайте вопросы, которые Вас интересуют, напрямую с преподавателями и с другими студентами на закрытом форуме</p>
                     </div>
-                    <div class="col-25 training__card-mini-headphones">
+                    <div class="col-25 training__card-mini-headphones headphones">
                         <img src="img/webp/headphones.webp" alt="" class="img training__card-img">
                         <h3 class="title training__card-title-mini span--bold">On-line вебинары</h3>
                         <p class="txt training__card-txt-mini training__card-txt-mini-headphones">Учавствуйте в мастер-классах наших преподавателей в режиме реального времени, и тут же обсуждайте с ними интересующие Вас вопросы</p>
@@ -249,6 +267,66 @@
                 </div>
 
             </div>
+        </section>
+
+        <section class="section lessons">
+           <div class="container">
+               
+                <!-- Slider main container -->
+            <div class="swiper">
+                
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                      <h2 class="title lessons__title span--bold">Урок 1</h2>
+                      <div class="row">
+                          <div class="col-50 study">
+                              <h3 class="title study__title span--bold">Что вы узнали на уроке?</h3>
+                                <ol class="study__ol" type="A">
+                                    <li class="study__li">Что такое алготрейдинг</li>
+                                    <li class="study__li">Основные плюсы торговых роботов</li>
+                                    <li class="study__li">Основные минусы торговых роботов</li>
+                                    <li class="study__li">Сформируйте общее понимание направления и курса в целом</li>
+                                    
+                                </ol>
+                                <p class="txt study__txt">Вы сможете дать четкое описание алгоритмической торговле, а также понимать и использовать все плюсы и минусы торговых роботов</p>
+                          </div>
+                          <div class="col-50">
+                            <div class="homework">
+                                <h3 class="title homework__title span--bold">Домашнее задание</h3>
+                                <ol class="homework__ol" type="A">
+                                    <li class="homework__li">Вы сможете дать четкое описание алгоритмической торговле, а также понимать и использовать все плюсы и минусы торговых роботов</li>
+                                </ol>
+                            </div>
+                            <div class="gift">
+                                <h3 class="title gift__title">Бонус</h3>
+                                <div class="giftwithtxt">
+                                    <img src="img/webp/gift.webp" alt="" class="img gift__img">
+                                    <p class="txt gift__txt">В качестве бонуса мы предоставляемвам 10-ку лучших БЕСПЛАТНЫХ форекс роботов</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="lessons__buttons">
+                        <button class="button lessons__button__sec button__secondary">узнать подробнее</button>
+                        <button class="button lessons__button button__primary">Начать обучение</button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+
+                  </div>
+                  <div class="swiper-slide">
+
+                  </div>
+                  
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swipe-first"></div>
+                <div class="swiper-button-next swipe-second"></div>
+            </div>
+           </div>
         </section>
     </main>
     
