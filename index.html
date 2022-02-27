@@ -92,12 +92,12 @@
                     <!-- /.col -->
                     <div class="col col__calc">
                         <div class="make__calc-data">
-                            <input type="number" class="make__calc-data__input">
+                            <input type="number" class="input make__calc-data__input">
                             <label class="make__calc-data__text">Количество инструментов,<br> по которым Вы торгуете</label>
                         </div>
                         <!-- /.make__calc-data -->
                         <div class="make__calc-data no-border">
-                            <input type="number" class="make__calc-data__input ">
+                            <input type="number" class="input make__calc-data__input ">
                             <label class="make__calc-data__text">Количество инструментов Вашего брокера</label>
                         </div>
                         <!-- /.make__calc-data -->
@@ -105,12 +105,12 @@
                     <!-- /.col -->
                     <div class="col col__calc">
                         <div class="make__calc-data make__calc-data__smaller">
-                            <input type="number" class="make__calc-data__input">
+                            <input type="number" class="input make__calc-data__input">
                             <label class="make__calc-data__text">Средняя месячная прибыль (%)</label>
                         </div>
                         <!-- /.make__calc-data -->
                         <div class="make__calc-data make__calc-data__smaller no-border">
-                            <input type="number" class="make__calc-data__input">
+                            <input type="number" class="input make__calc-data__input">
                             <label class="make__calc-data__text">Сумма депозита ($)</label>
                         </div>
                         <!-- /.make__calc-data -->
@@ -930,10 +930,10 @@
                     <h3 class="title free-lessons__headlight">Получите первые видеоуроки совершенно бесплатно уже сейчас!</h3>
                     <p class="txt free-lessons__description">Просто внесите Ваши данные в форму прям сейчас,<br> и мы сразу Вам вышлем подборку первых видеоуроков. Убедитесь сами!</p>
                     <form action="send.php" class="free-lessons__form__container">
-                        <input type="text" class="free-lessons__input free-lessons__input__name txt" name="free-lessons__input__name" id="free-lessons__input__name" placeholder="Имя">
-                        <input type="tel" class="free-lessons__input free-lessons__input__tel txt" name="free-lessons__input__tel" id="free-lessons__input__tel" placeholder="Телефон">
-                        <input type="email" class="free-lessons__input free-lessons__input__email txt" name="free-lessons__input__email" id="free-lessons__input__email" placeholder="E-mail">
-                        <input type="button" class="button free-lessons__input__button button__primary" value="Начать обучение">
+                        <input type="text" class="input free-lessons__input free-lessons__input__name txt" name="'userName" id="input free-lessons__input__name" placeholder="Имя">
+                        <input type="tel" class="input free-lessons__input free-lessons__input__tel txt" name="userPhone" id="input free-lessons__input__tel" placeholder="Телефон">
+                        <input type="email" class="input free-lessons__input free-lessons__input__email txt" name="userEmail" id="input free-lessons__input__email" placeholder="E-mail">
+                        <button class="button free-lessons__input__button button__primary">Начать обучение</button>
                     </form>
                 </div>
             </div>
@@ -1065,12 +1065,13 @@
                 <h2 class="title questions__headlight">Остались вопросы?</h2>
                 <p class="txt questions__description">Оставьте свои контактные данные и мы с Вами свяжемся
                     в самое ближайшее время</p>
-                <div class="questions__form__container">
-                    <input type="text" class="questions__input questions__input__name txt" name="questions__input__name" id="questions__input__name" placeholder="Имя">
-                    <input type="tel" class="questions__input questions__input__tel txt" name="questions__input__tel" id="questions__input__tel" placeholder="Телефон">
-                    <input type="email" class="questions__input questions__input__email txt" name="questions__input__email" id="questions__input__email" placeholder="E-mail">
-                    <input type="button" class="button questions__input__button button__primary" value="Свяжитесь со мной">
-                </div>
+                <form action="send.php" class="questions__form__container">
+                    <input type="text" class="input questions__input questions__input__name txt" name="userName" id="questions__input__name" placeholder="Имя">
+                    <input type="tel" class="input questions__input questions__input__tel txt" name="userPhone" id="questions__input__tel" placeholder="Телефон">
+                    <input type="email" class="input questions__input questions__input__email txt" name="userEmail" id="questions__input__email" placeholder="E-mail">
+                    <button class="button questions__input__button button__primary">Свяжитесь со мной</button>
+                    
+                </form>
             </div>
         </section>
     </main>
@@ -1081,7 +1082,7 @@
         
             <div class="footer__row">
                 <h2 class="footer__headlight title">Алготрейдинг</h2>
-                <input type="email" class="footer__input__email txt" name="footer__input__email" id="footer__input__email" placeholder="E-mail рассылка">
+                <input type="email" class="footer__input__email txt" name="footer__input__email" id="userEmail" placeholder="E-mail рассылка">
             </div>
             <div class="footer__row">
                 <div class="footer__column"><p class="txt footer__description">Обучение алгоритмической торговле</p></div>
@@ -1108,6 +1109,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
     
 </body>

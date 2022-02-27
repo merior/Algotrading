@@ -353,6 +353,7 @@ a {
 }
 
 .button {
+  cursor: pointer;
   font-family: 'Roboto';
   text-transform: uppercase;
   font-weight: bold;
