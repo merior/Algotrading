@@ -837,7 +837,7 @@
                     <h3 class="title advantages__row-title span--bold">Интенсив</h3>
                 <div class="row advantages__row">
                     <div class="col-inside">
-                        <div class="col-30 advantages__row-col">
+                        <div class="col-30  advantages__row-col">
                             <img src="img/webp/advantages/star.webp" alt="star" class="img advantages__row-col-img">
                             <h4 class="title span--bold advantages__row-col-title">Профессионалы</h4>
                             <p class="txt advantages__row-col-txt">Преподавать курс для Вас будут только опытные трейдеры-практики</p>
@@ -929,10 +929,16 @@
                 <div class="container free-lessons__container">
                     <h3 class="title free-lessons__headlight">Получите первые видеоуроки совершенно бесплатно уже сейчас!</h3>
                     <p class="txt free-lessons__description">Просто внесите Ваши данные в форму прям сейчас,<br> и мы сразу Вам вышлем подборку первых видеоуроков. Убедитесь сами!</p>
-                    <form action="send.php" class="free-lessons__form__container">
-                        <input type="text" class="input free-lessons__input free-lessons__input__name txt" name="'userName" id="input free-lessons__input__name" placeholder="Имя">
-                        <input type="tel" class="input free-lessons__input free-lessons__input__tel txt" name="userPhone" id="input free-lessons__input__tel" placeholder="Телефон">
-                        <input type="email" class="input free-lessons__input free-lessons__input__email txt" name="userEmail" id="input free-lessons__input__email" placeholder="E-mail">
+                    <form action="send.php" method="POST" class="free-lessons__form__container">
+                        <div class="free-lessons__input-inside">
+                            <input type="text" class="input free-lessons__input free-lessons__input__name txt" name="userName" id="userName" placeholder="Имя">
+                        </div>
+                        <div class="free-lessons__input-inside">
+                            <input type="tel" class="input free-lessons__input free-lessons__input__tel txt" name="userPhone" id="userPhone" placeholder="Телефон">
+                        </div>
+                        <div class="free-lessons__input-inside">
+                            <input type="email" class="input free-lessons__input free-lessons__input__email txt" name="userEmail" id="userEmail" placeholder="E-mail">
+                        </div>
                         <button class="button free-lessons__input__button button__primary">Начать обучение</button>
                     </form>
                 </div>
@@ -1009,7 +1015,7 @@
             <div class="container">
                 <div class="cashback__info">
                     <h2 class="title cashback__headlight">Мы вернем Вам 100% вложенных средств, если Вам не понравятся первые 3 урока</h2>
-                    <button href="#" class="cashback__button button button__primary">Приступить к созданию своего доходного робота</button>
+                    <button class="cashback__button button button__primary">Приступить к созданию своего доходного робота</button>
                 </div>
             </div>
         </section>
@@ -1065,10 +1071,16 @@
                 <h2 class="title questions__headlight">Остались вопросы?</h2>
                 <p class="txt questions__description">Оставьте свои контактные данные и мы с Вами свяжемся
                     в самое ближайшее время</p>
-                <form action="send.php" class="questions__form__container">
-                    <input type="text" class="input questions__input questions__input__name txt" name="userName" id="questions__input__name" placeholder="Имя">
-                    <input type="tel" class="input questions__input questions__input__tel txt" name="userPhone" id="questions__input__tel" placeholder="Телефон">
-                    <input type="email" class="input questions__input questions__input__email txt" name="userEmail" id="questions__input__email" placeholder="E-mail">
+                <form action="send.php" method="POST" class="questions__form__container">
+                    <div class="questions__input-inside">
+                        <input type="text" class="input questions__input questions__input__name txt" name="userName" id="userName" placeholder="Имя">
+                    </div>
+                    <div class="questions__input-inside">
+                        <input type="tel" class="input questions__input questions__input__tel txt" name="userPhone" id="userPhone" placeholder="Телефон">
+                    </div>
+                    <div class="questions__input-inside">
+                        <input type="email" class="input questions__input questions__input__email txt" name="userEmail" id="userEmail" placeholder="E-mail">
+                    </div>
                     <button class="button questions__input__button button__primary">Свяжитесь со мной</button>
                     
                 </form>
